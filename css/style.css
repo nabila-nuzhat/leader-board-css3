@@ -1,0 +1,162 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; 
+
+Poppins
+Regular 400
+Medium 500
+SemiBold 600
+Bold 700
+
+Roboto
+Regular 400
+Medium 500
+Bold 700
+
+Open Sans
+SemiBold 600*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+
+/* common styles or utilities*/
+
+body{
+	font-family: 'Poppins', sans-serif; 
+	background-color: #F3F1FF;
+}
+
+main{
+	display: flex;
+	justify-content: center;
+	
+	flex-direction: column;
+    align-items: center;
+}
+
+.container{
+	background-color: #fff;
+	width: 870px;
+	padding: 14px 30px 40px 33px; /* margin-top 33-(19px default margin/passing of h2)*/
+
+	margin-top: 21px;
+	border-radius: 5px;
+}
+
+.section-title{
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 36px;
+	color: #562EFF; /*---- another common color 02 ---*/
+}
+
+a{
+	text-decoration: none;
+}
+
+/* top players */
+
+.players{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+
+	grid-row-gap: 30px;/* gap between rows of a grid
+						display */
+}
+
+.player{
+	display: flex;
+	align-items: center;
+}
+
+.player img{
+	width: 56px;
+	height: 56px;
+}
+
+.player h3{
+	margin-left: 16px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+	color: #000000;
+}
+
+hr{
+	border: 1px solid #D1D1D1;
+	/*width: 807px;*/
+	margin-top: 30px;
+	margin-bottom: 27px;
+}
+
+
+/* Top Blog styles 
+*/
+.blogs{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-row-gap: 26px;
+}
+
+.blog{
+	display: flex;
+}
+.blog .thumbnail img{
+	width: 177px;
+	height: 117px;
+}
+
+.blog-info{
+	margin-left: 16px;
+}
+
+.blog-info h3{
+	font-weight: 500;
+	font-size: 20px;
+	/*line-height: 34px;*/
+	color: #000000; /*------ one of common color --------*/
+
+}
+
+.blog-info p{
+	font-weight: 400;
+	font-size: 16px;
+	/*line-height: 24px;*/
+	color: #9F9F9F;
+}
+
+.blog-info p a{
+	color: #562EFF;/*---- another common color 02 ---*/
+}
+
+/* ----
+courses style 
+--------*/
+.courses{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 24px;
+}
+
+.course {
+	width: 252.42px
+}
+
+.course .course-banner img{
+	width: 224px;
+	height: 104px;
+}
+.course-info{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.fa-star{
+	font-size: 12px;
+}
+.fa-star.filled{ /* 2 class of same element*/
+	color: #FFC014;
+}
+
+.fa-star.empty{
+	color: #AEAEAE;
+}
